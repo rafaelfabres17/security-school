@@ -1,0 +1,19 @@
+{
+  "name": "security-school",
+  "version": "1.0.0",
+  "scripts": {
+    "generate:hash": "node handlers/hash.js",
+    "generate:build": "node handlers/build.js",
+    "check": "node handlers/check.js"
+  },
+  "author": "Rafael Fabres",
+  "type": "module",
+  "imports": {
+    "#functions": [
+      "./functions/index.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.7"
+  }
+}

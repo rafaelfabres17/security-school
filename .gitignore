@@ -1,0 +1,4 @@
+.env
+extension/config.js
+extension/_metadata
+node_modules

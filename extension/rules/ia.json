@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html"
+      }
+    },
+    "condition": {
+      "requestDomains": [
+        "chatgpt.com",
+        "openai.com",
+        "claude.ai",
+        "gemini.google.com",
+        "bard.google.com",
+        "aistudio.google.com",
+        "notebooklm.google.com",
+        "copilot.microsoft.com",
+        "perplexity.ai",
+        "character.ai",
+        "poe.com",
+        "deepseek.com",
+        "chat.deepseek.com",
+        "grok.com",
+        "meta.ai",
+        "mistral.ai",
+        "you.com",
+        "blackbox.ai",
+        "phind.com",
+        "kimi.com",
+        "chat.qwen.ai",
+        "manus.im"
+      ],
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  }
+]

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-primary: hsl(220, 80%, 50%);
+  --color-background: hsl(220, 10%, 8%);
+  --color-secondary: hsl(220, 10%, 55%);
+  --color-white: hsl(200, 10%, 92%);
+  --color-success: hsl(140, 80%, 50%);
+  --color-error: hsl(0, 80%, 60%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-secondary);
+  font-family: "Geist", sans-serif;
+}
+
+.title {
+  color: var(--color-primary);
+}
+
+body.popup {
+  width: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.status {
+  font-weight: 600;
+}
+
+.status[data-active="true"] {
+  color: var(--color-success);
+}
+
+.status[data-active="false"] {
+  color: var(--color-error);
+}
+
+input,
+button {
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+input {
+  border: 1px solid var(--color-gray);
+  background: transparent;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  background: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.message {
+  margin: 0;
+  min-height: 1.2em;
+  font-size: 0.9em;
+  color: var(--color-secondary);
+}
+.message[data-error="true"] {
+  color: var(--color-error);
+}
+
+body .blocked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 24px;
+}
